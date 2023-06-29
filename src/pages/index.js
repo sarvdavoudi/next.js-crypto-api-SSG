@@ -32,5 +32,6 @@ export async function getStaticProps() {
     props: {
       serverCryptoCurrenctys: CryptoCurrenctys,
     },
+    revalidate: 10, // In seconds
   };
 }
